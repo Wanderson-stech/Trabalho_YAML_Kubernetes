@@ -1,0 +1,26 @@
+# Trabalho Acadêmico – Orquestração de Containers com Kubernetes
+## 🎓 Tema
+**Orquestração de Containers com Kubernetes: Desafios e Soluções no Mundo Real**
+Este projeto foi desenvolvido como entrega acadêmica para demonstrar o uso de Docker e Kubernetes na orquestração de dois servidores web distintos: **Nginx** e **Apache HTTPD**, rodando simultaneamente em um único cluster Kubernetes.
+---
+## 🧱 Estrutura do Projeto
+### `/docker`
+Contém os `Dockerfiles` e páginas HTML para testar os servidores:
+- `Dockerfile-nginx`
+- `Dockerfile-apache`
+- `index-nginx.html`
+- `index-apache.html`
+### `/k8s`
+Arquivos YAML usados para orquestrar os containers no Kubernetes:
+- `nginx-deployment.yaml`
+- `nginx-service.yaml`
+- `apache-deployment.yaml`
+- `apache-service.yaml`
+### `/docs`
+- `Trabalho_YAML_Kubernetes_Wan.pdf` — Texto teórico explicando YAML e Kubernetes.
+- `roteiro-video-pitch.txt` — Roteiro usado para gravar o vídeo de apresentação.
+---
+## 🚀 Como executar
+1. Inicie seu cluster local:
+```bash
+minikube start
